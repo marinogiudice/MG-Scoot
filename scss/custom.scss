@@ -1,0 +1,195 @@
+/* font import */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+/* custom variables declarations */
+
+$brand-font-family: "Quicksand";
+$brand-color-primary: #56a66a;
+$brand-color-secondary: #636573;
+$brand-color-dark: #313340;
+$brand-color-light: #b0b2bf;
+$brand-color-background: #f2f2f2;
+
+/* defines letter-space values */
+
+$letter-space: (
+    0: 0,
+    1: 0.5px,
+    2: 1px,
+    3: 1.5px,
+    4: 2px,
+    5: 2.5px,
+    6: 3px
+);
+
+/* bootstrap defaults customisation */
+
+$enable-shadows: true;
+$enable-responsive-font-sizes: true;
+
+/* colors */
+
+$primary: $brand-color-primary;
+$secondary: $brand-color-secondary;
+$light: $brand-color-light;
+$dark: $brand-color-dark;
+
+/* box shadow */
+
+$box-shadow: 0 0.25rem 0.5rem 0 $dark;
+
+/* fonts */
+
+$font-family-base: $brand-font-family;
+$line-height-base: 1.7;
+
+/* navbar component customisation */
+
+
+$navbar-dark-hover-color: $brand-color-secondary;
+$navbar-dark-color: white;
+$navbar-dark-active-color: $dark;
+$navbar-dark-toggler-border-color: $dark;
+$navbar-dark-brand-color: #ffffff;
+$navbar-dark-brand-hover-color: $brand-color-light;
+
+/* breadcrumb component customization */
+
+$breadcrumb-bg: lighten($brand-color-light,10);
+$breadcrumb-active-color: $navbar-dark-active-color; 
+
+$card-cap-bg: #ffffff;
+
+$body-bg: $brand-color-background;
+
+$link-hover-color: $secondary;
+
+$carousel-control-color: black;
+
+/* user dropdown customisation */
+$dropdown-min-width: 2rem;
+
+
+@import '../bootstrap/scss/bootstrap.scss';
+
+/* sets the properties for the user dropdown menu */
+.dropdown-menu {
+    left:unset;
+    right: 0;
+}
+
+/* enables the responsive font-size for the body elements */
+
+body {
+    @include rfs(1.1rem);
+}
+
+/* styles the  logo image */
+
+.logo {
+    height: 80%;
+    margin-top: 1rem;
+}
+
+/* class used to set the background-color of the elements with content */
+
+.panel {
+    background-color: $white;
+}
+
+/* stiles the images logo of the cards */
+
+.card-img-icon {
+    width: 10%;
+    height: 10%;
+    @include media-breakpoint-up(md) {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+/* styles the navbar-dark .nav-link elements */
+
+.navbar-dark .nav-link {
+    font-weight: $font-weight-bold;
+    @include rfs(1.2rem);  
+}
+
+/* styles the links in the page content */
+
+.text-link {
+    font-weight: $font-weight-bold;
+    color: darken($link-color,18);
+}
+
+/* sets the tables rows top border */
+
+table tr {
+    border-top: $table-border-width $table-border-color solid;
+}
+
+/* removes the top border from the table header row */
+
+table tr:first-child {
+    border-top: none;
+}
+
+/* styles the modal header */
+
+.modal-header {
+    color: $navbar-dark-color;
+}
+
+/* pushes the modal in the bottom of the screen when in xs displays */
+
+.modal-dialog-sm {
+    @extend .modal-dialog;
+    @include media-breakpoint-down(sm) {
+        align-items: flex-end;
+    }
+    @include media-breakpoint-up(sm) {
+        align-items: center;
+    }
+}
+
+/* styles the accordion header elements of the home page */
+
+#accordion .card-header button {
+    font-size: $font-size-base*2;
+}
+
+/* styles breadcrumb link */
+
+.breadcrumb a {
+    color: $secondary;
+    font-weight: $font-weight-bold;
+}
+
+/* styles the image icon in the top of the page. */
+
+.section-img-top {
+    width: 2rem;
+    max-height: 2rem;
+}
+
+/* generates the .ls class to set the letter-spacing of the elements in 
+   bootstrap style: property-breakpoint-value.
+   Uses the custom map variable $letter-space and the bootstrap default variable 
+   $grid-breakpoints.
+   I had a look around in the bootstraps scss files to generate this script. */
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        @each $size, $length in $letter-space {
+            .ls#{$infix}-#{$size} {
+                letter-spacing: $length;
+            }
+        }
+    }
+}
