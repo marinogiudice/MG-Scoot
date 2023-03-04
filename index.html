@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MG Scoot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  </head>
+  <body class="ls-1 ls-md-2 ls-xl-3">
+    <header class="container shadow d-none d-md-block panel mt-2">
+
+      <!-- header grid row content container -->
+      <div class="row justify-content-between">
+
+        <!-- grid column 1 -->
+        <div class="col-md-2">
+          <img class="logo img-fluid" src="media/logo/mg-scoot-logo.png" alt="logo">
+        </div>
+        <!-- end grid column 1 -->
+
+        <!-- grid column 2 -->
+        <div class="d-none col-xl-9 d-xl-block pl-xl-0 align-self-center">
+          <h1 class="display-3">Welcome To MGscoot</h1>
+        </div>
+        <div class=" d-none col-md-8 d-md-block d-xl-none align-self-center">
+          <h1 class="display-3">MGscoot</h1>
+        </div>
+        <!-- end grid column 2 -->
+
+      </div>
+      <!-- end header grid row content container -->
+
+    </header>
+    <div class="container shadow">
+      <div class="row mb-0">
+
+        <!-- Navbar Component Expands on medium displays -->
+        <nav class="col navbar navbar-expand-md navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavUl">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar-brand elements -->
+          <a class="navbar-brand d-md-none" href="index.html">MGscoot</a>
+
+          <!-- user icon with user links for smaller displays -->
+
+          <div class="d-md-none">
+            <div class="dropdown show">
+              <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownUserMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="  " src="media/icons/icons-user-35x35.png" alt="logo">
+              </a>
+
+              <!-- depending on the user authentication state, the user dropdown links are loaded here -->
+
+              <div class="dropdown-menu" aria-labelledby="dropdownUserMenuLink" id="user-links-insertion-point">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- end user icon with user links -->
+
+
+          <!-- end navbar-brand elements -->
+
+          <!-- collapsible element -->
+          <div class="collapse navbar-collapse justify-content-center" id="mainNavUl">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="routes.html">Routes</a></li>
+              <li class="nav-item"><a class="nav-link" href="guides.html">Guides</a></li>
+              <li class="nav-item"><a class="nav-link" href="scooters.html">Scooters</a></li>
+              <li class="nav-item"><a class="nav-link" href="safety.html">Safety</a></li>
+              <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- end collapsible element -->
+
+          <!-- user icon with user links for large displays -->
+
+          <div class="d-none d-md-block">
+            <div class="dropdown show">
+              <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownUserMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="  " src="media/icons/icons-user-35x35.png" alt="logo">
+              </a>
+
+              <!-- depending on the user authentication state, the user dropdown links are loaded here -->
+
+              <div class="dropdown-menu" aria-labelledby="dropdownUserMenuLink" id="user-links-insertion-point-md">
+
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar component -->
+
+      </div>
+
+
+
+    </div>
+    <main class="container">
+
+      <!-- grid row introductory top section of the page -->
+      <section class="row shadow mb-4 panel">
+
+        <!-- grid column 1 text -->
+        <article class="col-xs-12 col-lg-6 p-4">
+          <h3>Join the Urban Mobility Innovation</h3>
+          <p>MGScoot offers an eco-friendly, safe and fun way of seeing the sights of London.
+            We offer tours that take in most of the best-known sites and areas of the city, including <a class="text-link" href="route.html">Soho</a>,
+            <a class="text-link" href="#">Westminster</a>, <a class="text-link" href="#">Camden Town</a>, <a class="text-link" href="#">Notting Hill</a>,
+            <a class="text-link" href="#">Hampstead Heath</a>, <a class="text-link" href="#">Greenwich</a> and <a class="text-link" href="#">Wapping</a>.
+            We provide reliable safety-tested scooters and helmets.
+            All tours are led by experienced and knowledgeable guides.
+          </p>
+        </article>
+        <!-- end grid column 1 -->
+
+        <!-- grid column 2 banner picture -->
+        <div class="col-lg-6 d-none d-lg-flex pr-0">
+          <img src="media/mg-scoot-banner.jpg" class="img-fluid" alt="mg-scoot-banner">
+        </div>
+        <!-- end grid-column 2 -->
+
+      </section>
+      <!-- end grid row -->
+
+      <!-- Collapsible Component grid row contains the 4 subsections as columns. Each subsection is a card component
+           The component is used in xs and sm displays to hide and show the section text -->
+      <section class="row mt-4" id="accordion">
+
+        <!-- grid column 1-->
+        <section class="col-md-6 col-lg-4 col-xl-3 mb-4 px-0 px-md-3">
+
+          <!-- card component -->
+          <article class="card text-center shadow">
+            <div class="card-header text-left d-md-none">
+              <h2>
+                <button class="btn text-left btn-block" data-toggle="collapse" data-target="#routes">
+                  <img src="media/icons/routes-icon.png" class="mr-2 d-md-none card-img-icon" alt="routesicon" >
+                  Routes
+                </button>
+              </h2>
+            </div>
+            <div class="card-body collapse show d-md-block" id="routes">
+              <img class="card-img-top mb-4 mx-auto d-none d-md-block card-img-icon" src="media/icons/routes-icon.png" alt="routesicon">
+              <h2 class="card-title d-none d-md-block">Routes</h2>
+              <p class="card-text">Routes are designed to take in the highlights of London. They are also designed
+                  to optimise safety. Where possible they make use of the city’s extensive cycle superhighways
+                  and cycle lanes.
+              </p>
+              <a href="routes.html" class="btn btn-outline-secondary btn-sm mt-auto">Read More</a>
+            </div>
+          </article>
+          <!-- end card component -->
+
+        </section>
+        <!-- end grid column 1 -->
+
+        <!-- grid column 2 -->
+        <section class="col-md-6 col-lg-4 col-xl-3 mb-4 px-0 px-md-3">
+
+          <!-- card component -->
+          <article class="card text-center shadow">
+            <div class="card-header text-left d-md-none">
+              <h2 class="">
+                <button class="btn text-left btn-block" data-toggle="collapse" data-target="#guides">
+                  <img src="media/icons/guide-icon.png" class="mr-2 d-md-none card-img-icon" alt="guidesicon">
+                  Guides
+                </button>
+              </h2>
+            </div>
+            <div class="card-body collapse d-md-block" id="guides">
+              <img class="card-img-top mb-4 mx-auto d-none d-md-block card-img-icon" src="media/icons/guide-icon.png" alt="guidesicon">
+              <h2 class="card-title d-none d-md-block">Guides</h2>
+              <p class="card-text">Our guides are handpicked for their in-depth knowledge of London and for their ability to communicate that knowledge effectively.
+                They are also trained in road safety, first aid, and basic scooter maintenance.
+              </p>
+              <a href="guides.html" class="btn btn-outline-secondary btn-sm mt-auto">Read More</a>
+            </div>
+          </article>
+          <!-- end card component -->
+
+        </section>
+        <!-- end  grid column 2 -->
+
+        <!-- grid column 3 -->
+        <section class="col-md-6 col-lg-4 col-xl-3 mb-4 px-0 px-md-3">
+
+          <!-- card component -->
+          <article class="card text-center shadow">
+            <div class="card-header text-left d-md-none">
+              <h2>
+                <button class="btn text-left btn-block" data-toggle="collapse" data-target="#safety">
+                  <img src="media/icons/safety-icon.png" class="mr-2 d-md-none card-img-icon" alt="safetyicon">
+                  Safety
+                </button>
+              </h2>
+            </div>
+            <div class="card-body collapse d-md-block" id="safety">
+              <img class="card-img-top mb-4 mx-auto d-none d-md-block card-img-icon" src="media/icons/safety-icon.png" alt="safetyicon">
+              <h2 class="card-title d-none d-md-block">Safety</h2>
+              <p class="card-text">MGScoot takes a safety-first approach to its tours. All scooters are safety tested and regularly serviced.
+                High quality safety helmets are provided. Tours are scheduled for low traffic times – typically for Sunday mornings.
+              </p>
+              <a href="safety.html" class="btn btn-outline-secondary btn-sm mt-auto">Read More</a>
+            </div>
+          </article>
+          <!-- end card component -->
+
+        </section>
+        <!-- end grid column 3 -->
+
+        <!-- grid column 4 -->
+        <section class="col-md-6 col-lg-4 col-xl-3 mb-4 px-0 px-md-3">
+
+          <!-- card component -->
+          <article class="card text-center shadow">
+            <div class="card-header text-left d-md-none">
+              <h2>
+                <button class="btn text-left btn-block" data-toggle="collapse" data-target="#scooters">
+                  <img src="media/icons/scooter-icon.png" class="mr-2 d-md-none card-img-icon" alt="scootersicon" >
+                  Scooters
+                </button>
+              </h2>
+            </div>
+            <div class="card-body collapse d-md-block" id="scooters">
+              <img class="card-img-top mb-4 mx-auto d-none d-md-block card-img-icon" src="media/icons/scooter-icon.png" alt="scootersicon">
+              <h2 class="card-title d-none d-md-block">Scooters</h2>
+              <p class="card-text">MGScoot uses the very latest Blast scooters. Reliable, robust and really very nippy about town.
+                These scooters provide a fast, comfortable way of seeing the city without wearing out your shoes or being cooked up on a bus.
+              </p>
+              <a href="scooters.html" class="btn btn-outline-secondary btn-sm mt-auto">Read More</a>
+            </div>
+          </article>
+          <!-- end card component -->
+
+        </section>
+        <!-- end grid column 4 -->
+
+      </section>
+      <!-- end collapsible component -->
+
+    </main>
+
+    <!-- footer -->
+    <footer class="container">
+        <div class="row mt-5 mb-2">
+          <ul class=" col-12 nav justify-content-center p-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Corporate</a>
+            </li>
+          </ul>
+          <div class="col-12 mb-3 border-top">
+            <p class="text-center small mt-2 mb-0">Copyright &copy; MGScoot 2022</p>
+            <p class="text-center small mt-0">All Rights Reserved</p>
+          </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- scripts required from bootstrap -->
+    <script src="scripts/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="scripts/bootstrap/popper.min.js"></script>
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
+      
+    <!-- scripts required to run firebase -->
+    
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="scripts/firebase/fireBase-init.js"></script>
+    <script src="scripts/firebase/firebase-user-links-auth-check.js"></script>
+    <script src="scripts/app/logout.js"></script>
+    
+    <!-- end scripts-->
+
+  </body>
+</html>
